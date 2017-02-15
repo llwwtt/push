@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		canvas {
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<canvas width="600" height="400"></canvas>
+	<script>
+		/*分析：
+			1.先绘制坐标系（x轴，y轴）
+			2.绘制坐标轴箭头
+			3.将x轴等分成（条形个数+1）份
+			4.确定绘图的矩形区域的宽高（不能包括箭头的高度）
+			5.编写一个生成随机数的函数 随机生成四个数作为四个条形的高度 并放入一个数组datas[]
+			6.确定条形图的比例 k=绘图矩形区域的高度/数组中的最大值
+			7.利用数组的map方法返回一个装有每个条形图的起始坐标的数组（对象）
+			8.循环遍历新数组 并根据起始坐标条形图
+			9.设置条形图线宽 颜色等
+		*/
+		var cas = document.querySelector('canvas');
+		var ctx = cas.getContext('2d');
+
+
+    
+	/*	var startX=0;
+		var timer = setInterval(function(){
+			ctx.clearRect(0,0,cas.width,cas.height);
+			ctx.fillRect(startX,100,100,100);
+			startX++;
+            if (startX>=500) {
+            	clearInterval(timer);
+            }
+		},16)*/
+	</script>
+</body>
+</html>
